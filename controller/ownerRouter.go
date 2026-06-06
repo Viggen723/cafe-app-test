@@ -51,7 +51,7 @@ func RegisterOwnerRoutes(router *gin.Engine, db *sql.DB) {
 		}
 
 		c.JSON(http.StatusOK, gin.H{
-			"message": "Price updated successfully to " + strconv.Itoa(*input.Price) + " yen",
+			"message": "Price updated successfully to " + strconv.Itoa(*input.Price) + " K",
 		})
 	})
 
