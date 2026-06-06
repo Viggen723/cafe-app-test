@@ -13,8 +13,9 @@ func InitializeDB() *sql.DB {
 
 	// pgx is the driver instead of sqlite3 in the other case
 	database, err := sql.Open("pgx", url)
+
 	if err != nil {
-		panic(err) // It's good practice to handle errors, especially with network databases
+		panic(err)
 	}
 
 	// Creating the database table menu
